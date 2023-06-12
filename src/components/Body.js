@@ -36,14 +36,14 @@ const Body = () => {
         <Shimmer />
     ) : (
         <>
-            <div className="search-container">
-                <input type="text" className="search-input" 
-                        placeholder="Search" value={searchText}
+            <div className="flex justify-end p-5 m-2">
+                <input type="text" className=" px-1 mx-2 rounded-md border border-slate-300" 
+                        placeholder="restaurant..." value={searchText}
                         onChange={ (e) => {
                             setSearchText(e.target.value);
                         }}>
                 </input>
-                <button className="search-btn"
+                <button className="px-1 mx-1 rounded-lg bg-orange-400 hover:bg-orange-500"
                         onClick={() => {
                             // console.log(allRestaurants);
                             const data = filterData(searchText, allRestaurants);
@@ -53,7 +53,7 @@ const Body = () => {
                     Search
                 </button>
             </div>
-            <div className="restaurant-list">
+            <div className="flex flex-wrap">
                 {filteredRestaurants.map( (restaurant) => {
                     return (
                         <Link 
