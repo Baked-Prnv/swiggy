@@ -1,0 +1,32 @@
+{
+  "name": "swiggy",
+  "version": "1.0.0",
+  "description": "This is an UI Clone of Swiggy",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baked-Prnv/swiggy.git"
+  },
+  "author": "prnv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baked-Prnv/swiggy/issues"
+  },
+  "homepage": "https://github.com/Baked-Prnv/swiggy#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "parcel": "^2.9.1",
+    "postcss": "^8.4.24",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.2"
+  }
+}
