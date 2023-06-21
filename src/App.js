@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import  ReactDOM  from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Header from "./components/Header";
@@ -10,14 +10,20 @@ import Cart from "./components/Cart";
 import Instamart from "./components/Instamart";
 import LogIn from "./components/Login";
 import RestaurantMenu from "./components/RestaurantMenu";
+import UserContext from "./utils/userContext";
+import { user } from "./constants"
+import { Provider } from "react-redux";
+import store from "./utils/store";
 
 const AppLayout = () => {
     return (
-        <>
+        <Provider store={store}>
+        <UserContext.Provider value={{user:user}}>
             <Header />
             <Outlet />
             <Footer />
-        </>
+        </UserContext.Provider>
+        </Provider>
     );
 };
 
