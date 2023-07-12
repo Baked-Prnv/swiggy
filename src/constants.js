@@ -6,3 +6,6 @@ export const user = {
     name: "pranav",
     email: "prnvsingaria.44@gmail.com",
 };
+
+export const restaurantListAPI175 = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9121181&lng=77.6445548&offset=175&sortBy=RELEVANCE&pageType=SEE_ALL&page_type=DESKTOP_SEE_ALL_LISTING";
+export const restaurantMenuAPI2 = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9121181&lng=77.6445548&restaurantId=174789&submitAction=ENTER"
